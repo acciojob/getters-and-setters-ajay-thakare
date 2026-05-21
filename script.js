@@ -1,18 +1,20 @@
 //complete this code
-class Person {
-	 constructor(name, age) {
-    this.name = name;
-    this.age = age;
+constructor(name, age) {
+    this._name = name;
+    this._age = age;
   }
 
-  get_Name() {
-    return this.name;
+  get name() {
+    return this._name;
   }
 
-  set_age(n) {
-    return (this.age = n);
+  get age() {
+    return this._age;
   }
-}
+
+  set age(n) {
+    this._age = n;
+  }
 
 class Student extends Person {
 
